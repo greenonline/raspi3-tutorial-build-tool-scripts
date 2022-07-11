@@ -6,11 +6,28 @@ These scripts simply replicate the steps (and commands) in the first part of the
 Run these scripts with  `sh -x`, for example
 
 ```none
-aa_01_get_sources.sh
+sh -x aa_01_get_sources.sh
 ```
 if you so desire... or you could make them executable... up to you.
 
-You can run each of them individually, one at a time, or use the umbrella script `aa_00_run_all.sh` to run the whole lot in one go (which make time some time).
+You can run each of them individually, one at a time, or use the umbrella script `aa_00_run_all.sh` to run the whole lot in one go (which make time some time), for example
+
+```none
+sh -x aa_00_run_all.sh
+```
+
+Note: You may need to run using `sudo` (only for the last two scripts, `aa_06_build_binutils.sh` and `aa_07_build_gcc`. ALternatively you can run them as a standard (non-root) user and fiinish off the installs using 
+
+```none
+cd aarch64-binutils
+sudo make install
+```
+and
+```none
+cd aarch64-gcc
+sudo make install
+```
+respectively.
 
 These scripts create the cross-compiling tools in `/usr/local/cross-compiler`
 
