@@ -1,7 +1,12 @@
-# raspi3-tutorial-build-tool-scripts
+# Build tool creation scripts for Raspberry Pi 3 tutorial
+
+## Description
+
 Scripts to create the build tools necessary for the raspi3-tutorial repo: [`bztsrc`](https://github.com/bztsrc)/[**`raspi3-tutorial`**](https://github.com/bztsrc/raspi3-tutorial)
 
 These scripts simply replicate the steps (and commands) in the first part of the tutorial, [AArch64 Cross Compiler](https://github.com/bztsrc/raspi3-tutorial/tree/master/00_crosscompiler)
+
+## Usage
 
 Run these scripts with  `sh -x`, for example
 
@@ -16,7 +21,7 @@ You can run each of them individually, one at a time, or use the umbrella script
 sh -x aa_00_run_all.sh
 ```
 
-Note: You may need to run using `sudo` (only for the last two scripts, `aa_06_build_binutils.sh` and `aa_07_build_gcc`. ALternatively you can run them as a standard (non-root) user and fiinish off the installs using 
+Note: You may need to run using `sudo` (only for the last two scripts, `aa_06_build_binutils.sh` and `aa_07_build_gcc`, in particular for the final `make install` to run without throwing permissions errors. ALternatively you can run them as a standard (non-root) user and fiinish off the installs using 
 
 ```none
 cd aarch64-binutils
@@ -49,7 +54,11 @@ However, only the following six are required to complete the tutorial
 - `aarch64-elf-objdump` - utility to disassemble executables (for debugging)
 - `aarch64-elf-readelf` - an useful utility to dump sections and segments in executables (for debugging)
 
-### Acknowledgements
+## See also
+
+- My blog: [Raspberry Pi 3 bare metal](https://gr33nonline.wordpress.com/2022/07/08/raspberry-pi-3-bare-metal/)
+
+## Acknowledgements
 
 Thanks go to:
 
