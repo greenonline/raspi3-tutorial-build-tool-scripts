@@ -2,7 +2,7 @@
 
 ## Description
 
-Scripts to create the build tools necessary for the raspi3-tutorial repo: [`bztsrc`](https://github.com/bztsrc)/[**`raspi3-tutorial`**](https://github.com/bztsrc/raspi3-tutorial)
+Scripts to create the cross-compiler build tools necessary for the raspi3-tutorial repo: [`bztsrc`](https://github.com/bztsrc)/[**`raspi3-tutorial`**](https://github.com/bztsrc/raspi3-tutorial)
 
 These scripts simply replicate the steps (and commands) in the first part of the tutorial, [AArch64 Cross Compiler](https://github.com/bztsrc/raspi3-tutorial/tree/master/00_crosscompiler)
 
