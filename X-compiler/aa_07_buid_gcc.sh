@@ -9,6 +9,9 @@ cd aarch64-gcc
 --enable-gnu-indirect-function --disable-multilib --disable-werror --enable-checking=release --enable-default-pie \
 --enable-default-ssp --enable-gnu-unique-object
 make -j4 all-gcc
+
+# Uncomment the sudo make, if required
 make install-gcc
+#sudo make install-gcc
 cd ..
 
