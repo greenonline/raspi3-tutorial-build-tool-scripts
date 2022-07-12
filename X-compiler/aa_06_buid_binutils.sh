@@ -10,5 +10,6 @@ cd aarch64-binutils
 --enable-default-ssp --enable-gnu-unique-object
 make -j4
 make install
+#sudo make install
 cd ..
 
