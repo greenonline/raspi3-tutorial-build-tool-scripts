@@ -9,6 +9,8 @@ cd aarch64-binutils
 --enable-gnu-indirect-function --disable-multilib --disable-werror --enable-checking=release --enable-default-pie \
 --enable-default-ssp --enable-gnu-unique-object
 make -j4
+
+# Uncomment the sudo make, if required
 make install
 #sudo make install
 cd ..
